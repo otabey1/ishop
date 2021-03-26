@@ -1,5 +1,5 @@
 from django import forms
-from .models import Client
+from .models import User
 from django.core.exceptions import ValidationError
 
 
@@ -13,7 +13,7 @@ class RegistrationForm(forms.ModelForm):
         return self.cleaned_data['confirm']
 
     class Meta:
-        model = Client
+        model = User
         fields = ('first_name', 'last_name', 'username', 'password', 'confirm', 'email')
         widgets = {
             'password': forms.PasswordInput

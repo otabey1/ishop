@@ -130,7 +130,7 @@ USE_TZ = False
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 
-AUTH_USER_MODEL = 'client.Client'
+AUTH_USER_MODEL = 'client.User'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
