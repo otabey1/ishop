@@ -1,0 +1,758 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block head %}
+     <link rel="stylesheet" href="{% static 'css/category.css' %}">
+{% endblock %}
+
+{% block body %}
+    <script src="{% static 'js/category.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+<!--////////////Otabek////////-->
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="o-navbar-brand" href="#">Fruit and vegetables</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+            <ul class="navbar-nav ml-auto">
+                <li class="o-nav-item grid">
+                    <a class="o-icon"><i class="o-bi bi-border-all"></i></a>
+                    <a class="o-grid grid" href="#">Grid view</a>
+                </li>
+                <li class="nav-item list">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93027 1.33301 2.66665V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66665C14.6663 1.93027 14.0694 1.33331 13.333 1.33331Z" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1.33301 4.66663H14.6663" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1.33301 8H14.6663" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1.33301 11.3333H14.6663" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a class="o-list list" href="#">List view</a>
+                </li>
+                <li class="nav-item">
+                    <a class="o-nmbers"><span class="o-nmber mr-1 mb-0" style="border: 1px solid #D1D1D1; padding: 4px; border-radius: 12px; : 50px;"> 117 </span></a>
+                    <a class="o-products" href="#">Products</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="row">
+        <div class="o_filter">
+            <form method="post" action="/">
+                <input type="radio" name="filter" value="filter_text" class="mr-1 mb-0">
+                <label class="mb-0">Filtre text</label>
+                <input type="radio" name="filter text" value="filter text" class="mb-0">
+                <label class="mb-0">Filtre text</label>
+            </form>
+        </div>
+        <div class="o_filter">
+            <form method="post" action="/">
+                <input type="checkbox" name="filter text" value="filter-text" class="mr-1 mb-0">
+                <label class="mb-0">Filtre <span class="nbm" style="border: 1px solid #D1D1D1; border-radius: 12px; padding: 4px; height: 5px">Nbm</span></label>
+            </form>
+        </div>
+        <div class="o_filter">
+            <form method="post" action="/">
+                <input type="checkbox" name="filter" value="text-filter" class="mb-0 mr-1">
+                <label class="mb-0">Filtre <span class="nbm" style="border: 1px solid #D1D1D1; border-radius: 12px; padding: 4px; height: 5px">Nbm</span></label>
+            </form>
+        </div>
+        <div class="o-filter-select">
+            <form method="post" action="/">
+                <input  type="checkbox" name="filter text" value="text-filter" class="mr-1 mb-0">
+                <label class="mb-0">
+                    Filtre <span class="o-nomber mr-1 mb-0" style="border: 1px solid #D1D1D1; padding: 4px; border-radius: 12px; height: 5px;"> 12 </span>
+                    <select name="sl">
+                        <option value="select">select</option>
+                        <option value="None">None</option>
+                        <option value="None">None</option>
+                    </select>
+                </label>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="d-flex ">
+            <div class="o-nav-item">
+                <a class="o-applied">Applied filtres:</a>
+            </div>
+            <div class="o-nav-item">
+                <a class="o-selected border" style="border: 1px solid #D1D1D1; background: #E5E5E5; padding: 4px; border-radius: 12px;">Selected Filtre</a>
+            </div>
+            <div class="o-nav-item">
+                <a class="o-selected" style="border: 1px solid #D1D1D1; background: #E5E5E5; padding: 4px; border-radius: 12px;">Selected Filtre</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--////////////////////-->
+<!--///////////Muhammad Ali va Ulug'bek////////-->
+<div class="grid-view">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-3">
+                <h4 class="h4_m">Categories</h4>
+                <ul class="list-group">
+                    <li class="d-flex justify-content-between align-items-center mt-1">
+                        Category name
+                        <span class="badge alert-success badge-pill">320</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center mt-2">
+                        Category name
+                        <span class="badge alert-success badge-pill">112</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center mt-2">
+                        Category name
+                        <span class="badge alert-success badge-pill">32</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center mt-2">
+                        Category name
+                        <span class="badge alert-success badge-pill">48</span>
+                    </li>
+                </ul>
+                <h4 class="mt-3 h4_m">Brands</h4>
+                <div class="m-3">
+                    <input class="form-check-input " type="checkbox">
+                    <label class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div>
+
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div>
+                <h4 class="h4_m">Rating</h4>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+
+                    </label>
+                </div>
+
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                    </label>
+                </div>
+                <h4 class="h4_m">Price</h4>
+                <input type="range" class="custom-range">
+                <form>
+                    <div class="row">
+                        <div class="col-5">
+                            <label>max</label><br>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-2 mt-4">
+                            -
+                        </div>
+                        <div class="col-5">
+                            <label>min</label><br>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="apply mt-3 btn-success">
+                            <p class="button">Apply</p>
+                        </button>
+                        <button class="reset mt-3 ml-5 btn-success">
+                            <p>reset</p>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="border" style="border-radius: 12px">
+                            <div class="wer">
+                                <div class="sale text-center">-36%</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="product-title">Product title</h6>
+                                <p class="description">Space for a small product description</p>
+                                <div>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star" style="font-size: 13px; color: #D1D1D1"></i>
+                                </div>
+                                <p class="price d-block">36.99USD</p>
+                                <div class="btn btn-success btn1">Buy now</div>
+                                <del class="old-price ">48.56</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border border2" style="border-radius: 12px">
+                            <div class="wer">
+                                <div class="sale text-center">-36%</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="product-title">Product title</h6>
+                                <p class="description">Space for a small product description</p>
+                                <div class="d-none">
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star" style="font-size: 13px; color: #D1D1D1"></i>
+                                </div>
+                                <p class="price d-block">36.99USD</p>
+                                <div class="btn btn-success btn1">Buy now</div>
+                                <del class="old-price ">48.56</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border" style="border-radius: 12px">
+                            <div class="wer">
+                                <div class="sale text-center d-none">-36%</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="product-title">Product title</h6>
+                                <p class="description">Space for a small product description</p>
+                                <div>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star" style="font-size: 13px; color: #D1D1D1"></i>
+                                </div>
+                                <p class="price d-block">36.99USD</p>
+                                <div class="btn btn-success btn1">Buy now</div>
+                                <del class="old-price d-none">48.56</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border border2 mt-5">
+                            <div class="wer">
+                                <div class="sale text-center">-36%</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="product-title">Product title</h6>
+                                <p class="description">Space for a small product description</p>
+                                <div class="d-none">
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star" style="font-size: 13px; color: #D1D1D1"></i>
+                                </div>
+                                <p class="price d-block">36.99USD</p>
+                                <div class="btn btn-success btn1">Buy now</div>
+                                <del class="old-price ">48.56</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border mt-5" style="border-radius: 12px">
+                            <div class="wer">
+                                <div class="sale text-center">-36%</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="product-title">Product title</h6>
+                                <p class="description">Space for a small product description</p>
+                                <div class="">
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star" style="font-size: 13px; color: #D1D1D1"></i>
+                                </div>
+                                <p class="price d-block">36.99USD</p>
+                                <div class="btn btn-success btn1">Buy now</div>
+                                <del class="old-price ">48.56</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border mt-5" style="border-radius: 12px">
+                            <div class="wer">
+                                <div class="sale text-center d-none">-36%</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="product-title">Product title</h6>
+                                <p class="description">Space for a small product description</p>
+                                <div>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star" style="font-size: 13px; color: #D1D1D1"></i>
+                                </div>
+                                <p class="price d-block">36.99USD</p>
+                                <div class="btn btn-success btn1">Buy now</div>
+                                <del class="old-price d-none">48.56</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border border2 mt-5">
+                            <div class="wer">
+                                <div class="sale text-center">-36%</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="product-title">Product title</h6>
+                                <p class="description">Space for a small product description</p>
+                                <div class="d-none">
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star" style="font-size: 13px; color: #D1D1D1"></i>
+                                </div>
+                                <p class="price d-block">36.99USD</p>
+                                <div class="btn btn-success btn1">Buy now</div>
+                                <del class="old-price ">48.56</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border mt-5" style="border-radius: 12px">
+                            <div class="wer">
+                                <div class="sale text-center">-36%</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="product-title">Product title</h6>
+                                <p class="description">Space for a small product description</p>
+                                <div class="">
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star" style="font-size: 13px; color: #D1D1D1"></i>
+                                </div>
+                                <p class="price d-block">36.99USD</p>
+                                <div class="btn btn-success btn1">Buy now</div>
+                                <del class="old-price ">48.56</del>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border mt-5" style="border-radius: 12px">
+                            <div class="wer">
+                                <div class="sale text-center d-none">-36%</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="product-title">Product title</h6>
+                                <p class="description">Space for a small product description</p>
+                                <div>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star-fill" style="font-size: 13px"></i>
+                                    <i class="bi bi-star" style="font-size: 13px; color: #D1D1D1"></i>
+                                </div>
+                                <p class="price d-block">36.99USD</p>
+                                <div class="btn btn-success btn1">Buy now</div>
+                                <del class="old-price d-none">48.56</del>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="list-view d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h4 class="h4_m">Categories</h4>
+                <ul class="list-group">
+                    <li class="d-flex justify-content-between align-items-center mt-1">
+                        Category name
+                        <span class="badge alert-success badge-pill">320</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center mt-2">
+                        Category name
+                        <span class="badge alert-success badge-pill">112</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center mt-2">
+                        Category name
+                        <span class="badge alert-success badge-pill">32</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center mt-2">
+                        Category name
+                        <span class="badge alert-success badge-pill">48</span>
+                    </li>
+                </ul>
+                <h4 class="mt-3 h4_m">Brands</h4>
+                <div class="m-3">
+                    <input class="form-check-input " type="checkbox">
+                    <label class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div>
+
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div>
+                <h4 class="h4_m">Rating</h4>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+
+                    </label>
+                </div>
+
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                    </label>
+                </div>
+                <div class="m-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        <i class="bi bi-star-fill" style="color: var(--yellow)"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                    </label>
+                </div>
+                <h4 class="h4_m">Price</h4>
+                <input type="range" class="custom-range">
+                <form>
+                    <div class="row">
+                        <div class="col-5">
+                            <label>max</label><br>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-2 mt-4">
+                            -
+                        </div>
+                        <div class="col-5">
+                            <label>min</label><br>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="apply mt-3 btn-success">
+                            <p class="button">Apply</p>
+                        </button>
+                        <button class="reset mt-3 ml-5 btn-success">
+                            <p>reset</p>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-9">
+                <div class="row border mt-3" style="border-radius: 12px;">
+                    <div class=" col-4 img "></div>
+                    <div class="col-5">
+                        <h4 class="mt-3 h4_m">Product title</h4>
+                        <p class="space">Space for a small product description </p>
+                        <div style="margin-top: -8px">
+                            <i class="bi bi-star-fill "></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="fresheness mt-4">
+                                    <p>Fresheness</p>
+                                    <p>Farm</p>
+                                    <p>Delivery</p>
+                                    <p>Stock</p>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="fresheness mt-4">
+                                    <p>New (Extra fresh)</p>
+                                    <p>Grocery Tarm Fields</p>
+                                    <p>Europe</p>
+                                    <p>320 pcs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h4 class="mt-3 h4_m ">36.99 USD</h4>
+                        <del>48.56</del>
+                        <p class="free mt-3">Free Shipping</p>
+                        <p class="delivery">Delivery in 1 day</p>
+                        <button type="button" class="product btn-success mt-3">
+                            <p class="button mt-1">Product Detail</p>
+                        </button>
+                        <div class="add">
+                            <i class="bi bi-suit-heart"></i>
+                            <h5>Add to wish list ></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border mt-3" style="border-radius: 12px;">
+                    <div class=" col-4 img "></div>
+                    <div class="col-5">
+                        <h4 class="mt-3 h4_m">Product title</h4>
+                        <p class="space">Space for a small product description </p>
+                        <div style="margin-top: -8px">
+                            <i class="bi bi-star-fill "></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="fresheness mt-4">
+                                    <p>Fresheness</p>
+                                    <p>Farm</p>
+                                    <p>Delivery</p>
+                                    <p>Stock</p>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="fresheness mt-4">
+                                    <p>New (Extra fresh)</p>
+                                    <p>Grocery Tarm Fields</p>
+                                    <p>Europe</p>
+                                    <p>320 pcs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h4 class="mt-3 h4_m ">36.99 USD</h4>
+                        <del>48.56</del>
+                        <p class="free mt-3">Free Shipping</p>
+                        <p class="delivery">Delivery in 1 day</p>
+                        <button type="button" class="product btn-success mt-3">
+                            <p class="button mt-1">Product Detail</p>
+                        </button>
+                        <div class="add">
+                            <i class="bi bi-suit-heart"></i>
+                            <h5>Add to wish list</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border mt-3" style="border-radius: 12px;">
+                    <div class=" col-4 img "></div>
+                    <div class="col-5">
+                        <h4 class="mt-3 h4_m">Product title</h4>
+                        <p class="space">Space for a small product description </p>
+                        <div style="margin-top: -8px">
+                            <i class="bi bi-star-fill "></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="fresheness mt-4">
+                                    <p>Fresheness</p>
+                                    <p>Farm</p>
+                                    <p>Delivery</p>
+                                    <p>Stock</p>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="fresheness mt-4">
+                                    <p>New (Extra fresh)</p>
+                                    <p>Grocery Tarm Fields</p>
+                                    <p>Europe</p>
+                                    <p>320 pcs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h4 class="mt-3 h4_m ">36.99 USD</h4>
+                        <del>48.56</del>
+                        <p class="free mt-3">Free Shipping</p>
+                        <p class="delivery">Delivery in 1 day</p>
+                        <button type="button" class=" product btn-success mt-3">
+                            <p class="button mt-1">Product Detail</p>
+                        </button>
+                        <div class="add">
+                            <i class="bi bi-suit-heart"></i>
+                            <h5>Add to wish list</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border mt-3" style="border-radius: 12px;">
+                    <div class=" col-4 img "></div>
+                    <div class="col-5">
+                        <h4 class="mt-3 h4_m">Product title</h4>
+                        <p class="space">Space for a small product description </p>
+                        <div style="margin-top: -8px">
+                            <i class="bi bi-star-fill "></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star" style="color:#D1D1D1;"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="fresheness mt-4">
+                                    <p>Fresheness</p>
+                                    <p>Farm</p>
+                                    <p>Delivery</p>
+                                    <p>Stock</p>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="fresheness mt-4">
+                                    <p>New (Extra fresh)</p>
+                                    <p>Grocery Tarm Fields</p>
+                                    <p>Europe</p>
+                                    <p>320 pcs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h4 class="mt-3 h4_m ">36.99 USD</h4>
+                        <del>48.56</del>
+                        <p class="free mt-3">Free Shipping</p>
+                        <p class="delivery">Delivery in 1 day</p>
+                        <button type="button" class="product btn-success mt-3">
+                            <p class="button mt-1">Product Detail</p>
+                        </button>
+                        <div class="add">
+                            <i class="bi bi-suit-heart"></i>
+                            <h5>Add to wish list</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--///////////////////////////-->
+{% endblock %}

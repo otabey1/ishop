@@ -1,6 +1,6 @@
 from django.contrib import admin
 from client.models import User
-from .models import Category, Unit
+from .models import Category, Unit, PromoCode, Setting
 
 
 class UserAdmin(admin.ModelAdmin):
@@ -18,38 +18,36 @@ class UserAdmin(admin.ModelAdmin):
 
 admin.site.register(User, UserAdmin)
 
-
-def make_active(modeladmin, request, queryset):
-    queryset.update(status=Category.STATUS_ACTIVE)
-
-
-def make_inactive(modeladmin, request, queryset):
-    queryset.update(status=Category.STATUS_INACTIVE)
+#
+# def make_active(modeladmin, request, queryset):
+#     queryset.update(status=Category.STATUS_ACTIVE)
+#
+#
+# def make_inactive(modeladmin, request, queryset):
+#     queryset.update(status=Category.STATUS_INACTIVE)
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    actions = [make_active, make_inactive]
+    # actions = [make_active, make_inactive]
     fields = [
         'parent',
         'name_uz',
         'name_ru',
-        'status'
     ]
 
     list_display = [
         'id',
-        'admin',
+
         'parent',
         'name_uz',
         'name_ru',
-        'status'
     ]
 
-    def save_form(self, request, form, change):
-        category = form.save(commit=False)
-        category.admin = request.user
-
-        return super().save_form(request, form, change)
+    # def save_form(self, request, form, change):
+    #     category = form.save(commit=False)
+    #     category.admin = request.user
+    #
+    #     return super().save_form(request, form, change)
 
     class Meta:
         model = Category
@@ -70,3 +68,16 @@ class UnitAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Unit, UnitAdmin)
+
+
+class SettingAdmin(admin.ModelAdmin):
+    list_display = [
+        'key',
+        'value'
+    ]
+
+    class Meta:
+        model = Setting
+
+
+admin.site.register(Setting, SettingAdmin)

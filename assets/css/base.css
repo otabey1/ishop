@@ -1,0 +1,17 @@
+/* Proyektda ishlatilgan rang va shriftlar */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+:root{
+    --green: #6A983C;
+    --black: #151515;
+    --white: #FFFFFF;
+    --yellow: #FDBC15;
+    --light-grey1: #F5F5F5;
+    --light-grey2: #F4F8EC;
+    --dark-grey: #575757;
+    --grey: #b69a9a;
+    --border-grey: #D1D1D1;
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Open Sans', sans-serif;
+}

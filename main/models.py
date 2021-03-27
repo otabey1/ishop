@@ -6,6 +6,10 @@ class Review(models.Model):
     comment = models.TextField()
     created_ad = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        verbose_name = 'Izoh'
+        verbose_name_plural = 'Izohlar'
+
 
 class Category(models.Model):
     STATUS_ACTIVE = 1
@@ -19,14 +23,25 @@ class Category(models.Model):
         (STATUS_INACTIVE, 'Nofaol')
     ), default=STATUS_ACTIVE)
 
-    def __str__(self):
+    @property
+    def children(self):
+        return Category.objects.filter(parent=self).all()
 
+    def __str__(self):
         return self.name_uz
+
+    class Meta:
+        verbose_name = 'Katigoriya'
+        verbose_name_plural = 'Katigoriyalar'
 
 
 class Unit(models.Model):
     name_uz = models.CharField(max_length=45)
     name_ru = models.CharField(max_length=45)
+
+    class Meta:
+        verbose_name = "O'lchov birligi"
+        verbose_name_plural = "O'lchov birliklari"
 
 
 class Product(models.Model):
@@ -49,10 +64,18 @@ class Product(models.Model):
     created_ad = models.DateTimeField(auto_now_add=True)
     updated_ad = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        verbose_name = 'Mahsulot'
+        verbose_name_plural = 'Mahsulotlar'
+
 
 class ProductReview(models.Model):
     user = models.ForeignKey('client.User', on_delete=models.RESTRICT)
     product = models.ForeignKey(Product, on_delete=models.RESTRICT)
+
+    class Meta:
+        verbose_name = 'Mahsilot izohi'
+        verbose_name_plural = 'Mahsulot izohlari'
 
 
 class PromoCode(models.Model):
@@ -61,10 +84,18 @@ class PromoCode(models.Model):
     used = models.IntegerField(default=0)
     discount = models.SmallIntegerField(default=10)
 
+    class Meta:
+        verbose_name = 'Promo kod'
+        verbose_name_plural = 'Promo kodlar'
+
 
 class Setting(models.Model):
     key = models.CharField(max_length=50)
     value = models.TextField()
+
+    class Meta:
+        verbose_name = 'Sozlash'
+        verbose_name_plural = 'Sozlashlar'
 
 
 class Post(models.Model):
@@ -76,6 +107,10 @@ class Post(models.Model):
     status = models.SmallIntegerField(primary_key=True)
     created_ad = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        verbose_name = 'Maqola'
+        verbose_name_plural = 'Maqolalar'
+
 
 class PostComment(models.Model):
     parent = models.ForeignKey('PostComment', on_delete=models.RESTRICT, null=True, default=None, blank=True)
@@ -83,3 +118,7 @@ class PostComment(models.Model):
     comment = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models .DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'Maqola izohi'
+        verbose_name_plural = 'Maqola izohlari'

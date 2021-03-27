@@ -1,0 +1,339 @@
+/*////////XumoyunX.css//////////*/
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+a:hover {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+}
+.x-bg-light{
+    background-color: white !important;
+}
+.x-chat{
+    color: #6A983C !important;
+    font-size: 12px;
+    line-height: 16px;
+}
+.x-chat:hover{
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+.x-nomer{
+    font-size: 12px;
+    line-height: 16px;
+}
+.x-email{
+    font-size: 12px;
+    line-height: 16px;
+}
+.x-navbar-light .x-navbar-nav .x-nav-link {
+    color: #6A983C;
+    font-size: 12px;
+    line-height: 16px;
+}
+.x-img{
+    width: 177px;
+}
+.x-bordee{
+    border-radius: 12px;
+    background-color: #F9F9F9;
+    height: 59px;
+}
+.x-nav-link{
+    color: black;
+}
+.x-number {
+    width: 1rem;
+    height: 1rem;
+    font-size: 12px;
+    background-color: #E6704B;
+    border-radius: 50%;
+    color: #fff;
+    right: 14px;
+    left: -8px;
+    top: 14px !important;
+}
+.x-ssilka{
+    color: #6A983C;
+    font-family: var(--font2);
+}
+.x-ramz {
+    width: 351px;
+    height: 269px;
+    border-radius: 12px;
+    background-image: url("../img/group.png");
+}
+.x-table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    line-height: 9px;
+}
+.x-knopka:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+}
+/*///////////////////*/
+/*//////////ulugbek-me//////////*/
+.border2 {
+    width: 269px;
+    height: 332px;
+    border-radius: 12px;
+}
+.btn1 {
+    background-color: var(--green);
+    color: #ffffff;
+    border-radius: 12px;
+    margin-top: -60px;
+    margin-left: 138px;
+}
+.card-title {
+    size: 2rem;
+    line-height: 22px;
+    width: 251px;
+    height: 23px;
+    margin-top: -10px
+}
+.bot{
+    margin-left: 175px;
+    margin-bottom: 5px;
+}
+.sale {
+    color: var(--green);
+    border-radius: 25px;
+    margin: 5px 15px 5px;
+    font-size: 12px;
+    background-color: #F4F8EC;
+    position: absolute;
+    width: 50px;
+}
+.wer{
+    background-color: #F9F9F9;
+    width: 236px;
+    height: 180px;
+    top: 16px;
+    left: 16px;
+    margin: 14px 14px;
+    border-radius: 12px;
+}
+.wer1 {
+    background-color: #E5E5E5 ;
+    width: 15rem;
+    height: 20rem;
+    margin: 14px 14px;
+    border-radius: 12px;
+}
+.wer3 {
+    background-color: #E5E5E5;
+    width: 15rem;
+    height: 20rem;
+    margin: 14px 14px;
+    border-radius: 12px;
+}
+.price {
+    width: 91px;
+    height: 27px;
+    font-weight: bold;
+    margin-top: 12px;
+    font-size: 18px;
+}
+.description {
+    font-size: 12px;
+    font-style: normal;
+    margin-bottom: 0px;
+}
+.product-title {
+    font-size: 15px;
+    margin-top: -20px;
+}
+.old-price {
+    font-size: 12px;
+    color: #A9A9A9;
+    margin-top: -12px;
+    position: absolute;
+    margin-left: -225px;
+}
+/*///////////////////////////*/
+/*/////////*/
+.section-headline {
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+}
+.section-button {
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+}
+/*//////////*/
+/*////////jaju-com.css////////*/
+.text {
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 23px;
+    color: var(--black);
+}
+.customer {
+    font-family: var(--font2);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--grey);
+}
+.carrot {
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    color: var(--black);
+}
+.img {
+    height: 436px;
+    width:569px;
+    background: #F9F9F9;
+    border-radius: 12px;
+    background: url("../img/blogs7.jpeg") 50% 50% no-repeat;
+    background-size: cover;
+}
+.img1 {
+    height: 436px;
+    width:569px;
+    background: #F9F9F9;
+    border-radius: 12px;
+    background: url("../img/blogs7.jpeg") 50% 50% no-repeat;
+    background-size: cover;
+}
+.img2 {
+    height: 436px;
+    width:569px;
+    background: #F9F9F9;
+    border-radius: 12px;
+    background: url("../img/blogs7.jpeg") 50% 50% no-repeat;
+    background-size: cover;
+}
+.key {
+    font-family: var(--font2);
+    color: var(--grey);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+.value {
+    font-family: var(--font2);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--black);
+    font-weight: 400;
+}
+.heart {
+    color: #E6704B;
+    font-weight: bolder;
+}
+.compare {
+    background: url("../img/templates-img/ic-layout-picture-right.svg");
+}
+.txt {
+    font-family: var(--font1);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: left;
+    color: var(--black);
+}
+.vitamin {
+    font-family: var(--font2);
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--dark-grey);
+    font-style: normal;
+
+}
+.nav {
+    border-bottom: 2px solid var(--light-grey1);
+}
+.nav a {
+    font-family: var(--font1);
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.nav a:hover {
+    border-bottom: 3px solid var(--green);
+}
+.nav a.active {
+    border-bottom: 3px solid var(--green);
+}
+.origin {
+    font-family: var(--font1);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+}
+.txt1 {
+    font-family: var(--font2);
+    font-size: 14px;
+}
+.vita {
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 12px;
+}
+.price {
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--green)
+}
+.price1 {
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--grey);
+    text-decoration-line: line-through;
+}
+.table {
+    border: 1px solid var(--light-grey1);
+    border-radius: 12px;
+}
+.button {
+    padding: 12px 16px;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    font-family: var(--font1);
+    font-size: 15px;
+
+}
+.pcs {
+    color: #F9F9F9;
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid var(--border-grey);
+}
+.nav {
+    overflow: hidden;
+}
+/*//////////////////*/
+/*////////Abdug'affor////////*/
+.ssilka{
+    color: #6A983C;
+    font-family: var(--font2);
+}
+.tags{
+    border: #5a6268;
+    border-radius: 12px;
+}
+/*/////////////////////*/
